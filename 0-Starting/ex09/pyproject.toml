@@ -1,0 +1,13 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "ft_package"
+version = "0.0.1"
+author = "sandra"
+author-email = "sandrfer@student.42urduliz.com"
+license = "MIT"
+description = "A sample test package"
+url = "https://github.com/sanfermen/ft_package"
