@@ -1,5 +1,5 @@
 import sys
-from ft_filter import ft_filter
+import ft_filter
 
 
 def main():
@@ -10,7 +10,7 @@ def main():
             print("AssertionError: Second argument must be a number")
             return
 
-        split_str = ft_filter(lambda x: len(x) > nbr, sys.argv[1].split())
+        split_str = ft_filter.ft_filter(lambda x: len(x) > nbr, sys.argv[1].split())
         return print(split_str)
 
     else:
