@@ -5,6 +5,7 @@ ft_dict = {"Hello" : "titi!"}
 
 ft_list[1] = "World!"
 ft_dict["Hello"] = "42Paris!"
+#Tuples are immutable, so you cannot change their values, but you can assign a new tuple to the variable
 ft_tuple = ("Hello", "France!")
 #Sets are unordered, so you cannot be sure in which order the items will appear
 ft_set.remove("tutu!")

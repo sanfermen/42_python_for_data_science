@@ -28,16 +28,20 @@ def count_char(text):
 
 
 def main():
-    if len(sys.argv) == 2:
-        str = sys.argv[1]
-    else:
-        str = input("What is the text to count?")
-
     try:
-        assert len(sys.argv) == 2, "Only one argument is allowed"
-        count_char(str)
+        if len(sys.argv) > 2:
+            raise AssertionError("Only one argument is allowed")
+
+        if len(sys.argv) == 2:
+            text = sys.argv[1]
+        else:
+            text = input("What is the text to count?\n")
+
+        count_char(text)
     except AssertionError as e:
         print(f"AssertionError: {e}")
+    except Exception as e:
+        print(f"Unexpected error: {e}")
 
 
 if __name__ == "__main__":

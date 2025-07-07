@@ -10,7 +10,7 @@ try:
         raise AssertionError("argument is not an integer")
 
     if len(sys.argv) != 2:
-        raise AssertionError("more than one argument is provided")
+        raise AssertionError("more than one argument are provided")
 
     if num % 2 == 0:
         print("I'm Even.")
